@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ub-red: #E31E24;
+  --color-swisse-cream: #F9F7F2;
+  --color-swisse-charcoal: #2A2A2A;
+  
+  --color-beauty-pink: #F47C7C;
+  --color-immunity-orange: #F7941D;
+  --color-gut-green: #8CC63F;
+  --color-sleep-purple: #9E005D;
+  
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2A2A2A; /* Swisse charcoal default text */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
