@@ -17,6 +17,16 @@ export const metadata: Metadata = {
   icons: {
     icon: "/adaptive-icon.svg",
   },
+  openGraph: {
+    images: [
+      {
+        url: "/jason-briscoe-GrdJp16CPk8-unsplash.jpg",
+        width: 1200,
+        height: 630,
+        alt: "UB Nutraceuticals Hero Image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
