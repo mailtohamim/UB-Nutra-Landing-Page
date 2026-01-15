@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import { products, categories, values } from "@/lib/data";
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, Award, CheckCircle, FlaskConical } from "lucide-react";
+import { ArrowRight, ShieldCheck, Award, FlaskConical, Globe } from "lucide-react";
 
 export default function Home() {
   const featuredProducts = products.slice(0, 3); // Top 3 products for spotlight
@@ -35,24 +35,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust/Values Bar ("Evolving Wellness") */}
-      <section className="py-16 bg-[#F9F7F2]">
+      {/* Why UB Nutraceuticals Section */}
+      <section className="py-20 bg-[#F9F7F2] text-center">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-center text-swisse-charcoal uppercase mb-12 tracking-tight">
-            Evolving Wellness
+          <h2 className="text-4xl md:text-5xl font-extrabold text-swisse-charcoal uppercase mb-6 tracking-tight">
+            WHY UB NUTRACEUTICALS?
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {values.map((item) => (
-              <div key={item.label} className="flex flex-col items-center text-center space-y-4">
-                <div className="p-5 rounded-full border-2 border-ub-red bg-white shadow-sm flex items-center justify-center">
-                  <img src={item.icon} alt={item.label} className="w-9 h-9 text-ub-red" style={{ filter: 'invert(16%) sepia(96%) saturate(6968%) hue-rotate(352deg) brightness(98%) contrast(125%)' }} />
-                </div>
-                <span className="font-bold text-swisse-charcoal uppercase tracking-wide text-sm md:text-base">
-                  {item.label}
-                </span>
-              </div>
-            ))}
+          <p className="max-w-4xl mx-auto text-lg text-gray-600 mb-16 leading-relaxed font-medium">
+            UB Nutraceuticals is your trusted partner for whatever life throws at you. For over 19 years, we've been developing premium formulas, backed by science and traditional evidence, to help you navigate your wellness journey.
+          </p>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <div className="flex flex-col items-center gap-4 group">
+              <ShieldCheck size={64} strokeWidth={1.5} className="text-swisse-charcoal mb-2 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg uppercase leading-tight max-w-[180px]">Australia's Trusted Manufacturer</h3>
+              <p className="text-sm text-gray-600 px-4">Premium quality manufacturing since 2006</p>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 group">
+              <Globe size={64} strokeWidth={1.5} className="text-swisse-charcoal mb-2 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg uppercase leading-tight max-w-[180px]">Globally Sourced Ingredients</h3>
+              <p className="text-sm text-gray-600 px-4">Sourcing only the best materials worldwide</p>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 group">
+              <Award size={64} strokeWidth={1.5} className="text-swisse-charcoal mb-2 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg uppercase leading-tight max-w-[180px]">Certified Excellence</h3>
+              <p className="text-sm text-gray-600 px-4">GMP, FDA, and Halal Certified Facility</p>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 group">
+              <FlaskConical size={64} strokeWidth={1.5} className="text-swisse-charcoal mb-2 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg uppercase leading-tight max-w-[180px]">Backed by Science</h3>
+              <p className="text-sm text-gray-600 px-4">Formulations driven by research & innovation</p>
+            </div>
+
           </div>
+
+          <p className="mt-20 text-xs text-gray-400 font-medium tracking-wide">
+            *UB Nutraceuticals is a premier contract manufacturer dedicated to global health standards.
+          </p>
         </div>
       </section>
 
