@@ -1,5 +1,5 @@
 
-import { Users, Building2, FlaskConical, Globe } from "lucide-react";
+import { Building2, FlaskConical, Globe } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -38,10 +38,9 @@ export default function AboutPage() {
 
             {/* Stats */}
             <section className="py-16 bg-ub-red text-white">
-                <div className="max-w-[1440px] mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div className="max-w-[1440px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {[
-                        { value: "19+", label: "Years Experience", icon: Users },
-                        { value: "33,000", label: "Sq Ft Facility", icon: Building2 },
+                        { value: "68,000", label: "Sq Ft Facility", icon: Building2 },
                         { value: "3", label: "Branch Manufacturers", icon: Globe },
                         { value: "1", label: "R&D Institute", icon: FlaskConical },
                     ].map((stat) => (
