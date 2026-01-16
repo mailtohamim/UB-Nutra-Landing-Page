@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import CertificationCarousel from "@/components/CertificationCarousel";
+import QuizSection from "@/components/QuizSection";
 import { products, categories, values } from "@/lib/data";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Award, FlaskConical, Globe } from "lucide-react";
@@ -73,6 +74,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Wellness Quiz Section */}
+      <QuizSection />
 
       {/* Why UB Nutraceuticals Section */}
       <section className="py-20 bg-[#F9F7F2] text-center">
