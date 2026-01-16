@@ -6,6 +6,6 @@
     </style>
   </defs>
   <rect x="8" y="8" width="104" height="104" rx="24" fill="none" stroke="#2A2A2A" stroke-width="7"/>
-  <text x="60" y="73" class="txt cut" font-size="28">HACCP</text>
-  <text x="60" y="73" class="txt" font-size="28">HACCP</text>
+  <text x="60" y="75" class="txt cut" font-size="42">HACCP</text>
+  <text x="60" y="75" class="txt" font-size="42">HACCP</text>
 </svg>

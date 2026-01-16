@@ -6,8 +6,8 @@
     </style>
   </defs>
   <rect x="8" y="8" width="104" height="104" rx="24" fill="none" stroke="#2A2A2A" stroke-width="7"/>
-  <text x="60" y="62" class="txt cut" font-size="42">ISO</text>
-  <text x="60" y="62" class="txt" font-size="42">ISO</text>
-  <text x="60" y="92" class="txt cut" font-size="28">22000</text>
-  <text x="60" y="92" class="txt" font-size="28">22000</text>
+  <text x="60" y="60" class="txt cut" font-size="42">ISO</text>
+  <text x="60" y="60" class="txt" font-size="42">ISO</text>
+  <text x="60" y="95" class="txt cut" font-size="32">22000</text>
+  <text x="60" y="95" class="txt" font-size="32">22000</text>
 </svg>
