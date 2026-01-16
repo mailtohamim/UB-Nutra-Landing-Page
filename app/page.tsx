@@ -35,6 +35,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Brands Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-center text-swisse-charcoal uppercase mb-12 tracking-tight">
+            Our Brands
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            {/* Ember Card */}
+            <a href="https://emberstore.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative h-80 bg-black rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <img src="/EMBER Logo.svg" alt="Ember" className="w-32 mb-4 text-white" />
+
+              <p className="text-gray-400 font-medium tracking-wide text-sm">Sports & Gym Nutrition</p>
+              <span className="mt-6 px-4 py-1.5 border border-white/20 text-white rounded-full text-xs font-bold uppercase group-hover:bg-white group-hover:text-black transition-all">Visit Store</span>
+            </a>
+
+            {/* CellNova Card */}
+            <div className="relative h-80 bg-[#EFF6FF] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-blue-50 transition-all duration-300 hover:shadow-lg">
+              <span className="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
+              <div className="text-3xl font-black text-blue-900 mb-4 uppercase tracking-tighter">CellNova</div>
+              <h2 className="text-blue-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Wellness Supplement Brand</h2>
+              <p className="text-blue-600/70 text-center text-xs">Advanced cellular health solutions.</p>
+            </div>
+
+            {/* PureNova Card */}
+            <div className="relative h-80 bg-[#F0FDF4] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-green-50 transition-all duration-300 hover:shadow-lg">
+              <span className="absolute top-3 right-3 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
+              <div className="text-3xl font-black text-green-900 mb-4 uppercase tracking-tighter">PureNova</div>
+              <h2 className="text-green-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Nutrition Supplement Brand</h2>
+              <p className="text-green-600/70 text-center text-xs">Pure, potent nature-derived nutrition.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
       {/* Why UB Nutraceuticals Section */}
       <section className="py-20 bg-[#F9F7F2] text-center">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,45 +114,6 @@ export default function Home() {
           <p className="mt-20 text-xs text-gray-400 font-medium tracking-wide">
             *UB Nutraceuticals is a premier contract manufacturer dedicated to global health standards.
           </p>
-        </div>
-      </section>
-
-
-
-      {/* Our Brands Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center text-swisse-charcoal uppercase mb-12 tracking-tight">
-            Our Brands
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-            {/* Ember Card */}
-            <a href="https://emberstore.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative h-80 bg-black rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
-              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <img src="/EMBER Logo.svg" alt="Ember" className="w-32 mb-4 text-white" />
-
-              <p className="text-gray-400 font-medium tracking-wide text-sm">Sports & Gym Nutrition</p>
-              <span className="mt-6 px-4 py-1.5 border border-white/20 text-white rounded-full text-xs font-bold uppercase group-hover:bg-white group-hover:text-black transition-all">Visit Store</span>
-            </a>
-
-            {/* CellNova Card */}
-            <div className="relative h-80 bg-[#EFF6FF] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-blue-50 transition-all duration-300 hover:shadow-lg">
-              <span className="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
-              <div className="text-3xl font-black text-blue-900 mb-4 uppercase tracking-tighter">CellNova</div>
-              <h2 className="text-blue-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Wellness Supplement Brand</h2>
-              <p className="text-blue-600/70 text-center text-xs">Advanced cellular health solutions.</p>
-            </div>
-
-            {/* PureNova Card */}
-            <div className="relative h-80 bg-[#F0FDF4] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-green-50 transition-all duration-300 hover:shadow-lg">
-              <span className="absolute top-3 right-3 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
-              <div className="text-3xl font-black text-green-900 mb-4 uppercase tracking-tighter">PureNova</div>
-              <h2 className="text-green-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Nutrition Supplement Brand</h2>
-              <p className="text-green-600/70 text-center text-xs">Pure, potent nature-derived nutrition.</p>
-            </div>
-
-          </div>
         </div>
       </section>
 
