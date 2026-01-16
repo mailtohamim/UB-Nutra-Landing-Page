@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120">
   <defs>
     <style>
       .txt { font-family: Arial, sans-serif; font-weight: 900; text-anchor: middle; fill: #2A2A2A; }
       .cut { stroke: #F9F7F2; stroke-width: 12px; paint-order: stroke fill; stroke-linecap: round; stroke-linejoin: round; }
     </style>
   </defs>
-  <rect x="8" y="8" width="104" height="104" rx="24" fill="none" stroke="#2A2A2A" stroke-width="7"/>
-  <text x="60" y="75" class="txt cut" font-size="42">HACCP</text>
-  <text x="60" y="75" class="txt" font-size="42">HACCP</text>
+  <rect x="38" y="8" width="104" height="104" rx="24" fill="none" stroke="#2A2A2A" stroke-width="7"/>
+  <text x="90" y="78" class="txt cut" font-size="52">HACCP</text>
+  <text x="90" y="78" class="txt" font-size="52">HACCP</text>
 </svg>
