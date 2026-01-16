@@ -88,8 +88,8 @@ export default function Home() {
 
             <div className="flex flex-col items-center gap-4 group">
               <ShieldCheck size={64} strokeWidth={1.5} className="text-swisse-charcoal mb-2 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="font-bold text-lg uppercase leading-tight max-w-[180px]">Australia's Trusted Manufacturer</h3>
-              <p className="text-sm text-gray-600 px-4">Premium quality manufacturing since 2006</p>
+              <h3 className="font-bold text-lg uppercase leading-tight max-w-[180px]">Bangladesh's Trusted Manufacturer</h3>
+              <p className="text-sm text-gray-600 px-4">Premium quality manufacturing</p>
             </div>
 
             <div className="flex flex-col items-center gap-4 group">
