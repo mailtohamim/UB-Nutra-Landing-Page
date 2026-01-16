@@ -112,6 +112,10 @@ export default function Home() {
 
           </div>
 
+          <div className="mt-16">
+            <CertificationCarousel />
+          </div>
+
           <p className="mt-20 text-xs text-gray-400 font-medium tracking-wide">
             *UB Nutraceuticals is a premier contract manufacturer dedicated to global health standards.
           </p>
@@ -119,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* Certification Carousel */}
-      <CertificationCarousel />
+
 
       {/* Wellness Hub */}
       <section className="py-16 md:py-24 bg-gray-50 border-t border-gray-100">
