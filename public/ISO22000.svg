@@ -1,18 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <defs>
-    <style>
-      .text { font-family: Arial, sans-serif; font-weight: bold; text-anchor: middle; }
-    </style>
-  </defs>
-  <rect x="10" y="10" width="180" height="180" rx="20" fill="#ffffff" stroke="#1565C0" stroke-width="8"/>
-  <rect x="25" y="25" width="150" height="150" rx="10" fill="#E3F2FD"/>
-  
-  <text x="100" y="90" class="text" font-size="60" fill="#1565C0">ISO</text>
-  <text x="100" y="140" class="text" font-size="40" fill="#0D47A1">22000</text>
-  
-  <rect x="25" y="150" width="150" height="25" rx="0" fill="#1565C0"/>
-  <text x="100" y="168" class="text" font-size="12" fill="#ffffff">FOOD SAFETY MANAGEMENT</text>
-  
-  <circle cx="160" cy="40" r="15" fill="#4CAF50"/>
-  <path d="M153 40 L 158 45 L 167 36" fill="none" stroke="white" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#2A2A2A" stroke-width="4"/>
+  <text x="60" y="60" font-family="Arial, sans-serif" font-weight="900" font-size="32" text-anchor="middle" fill="#2A2A2A">ISO</text>
+  <text x="60" y="88" font-family="Arial, sans-serif" font-weight="900" font-size="22" text-anchor="middle" fill="#2A2A2A">22000</text>
 </svg>
