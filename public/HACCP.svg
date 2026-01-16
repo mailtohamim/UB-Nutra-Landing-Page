@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Outer Seal -->
+  <circle cx="100" cy="100" r="90" fill="#B71C1C" />
+  <circle cx="100" cy="100" r="82" fill="#D32F2F" stroke="#FFC107" stroke-width="4"/>
+  <circle cx="100" cy="100" r="65" fill="#ffffff"/>
+  
+  <!-- Text -->
+  <text x="100" y="115" class="text" font-size="40" fill="#B71C1C">HACCP</text>
+  <text x="100" y="135" class="text" font-size="12" fill="#D32F2F">CERTIFIED</text>
+  
+  <path d="M100 45 L 115 75 L 100 85 L 85 75 Z" fill="#FFC107"/>
+  
+  <!-- Text on curve approximation -->
+  <path id="curve" d="M 35 100 A 65 65 0 0 1 165 100" fill="none"/>
+  <text width="200">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle" font-size="10" font-family="Arial" font-weight="bold" fill="#ffffff">
+      HAZARD ANALYSIS CRITICAL CONTROL POINT
+    </textPath>
+  </text>
+</svg>
