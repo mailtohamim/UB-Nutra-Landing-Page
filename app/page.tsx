@@ -1,6 +1,7 @@
 
 import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
+import CertificationCarousel from "@/components/CertificationCarousel";
 import { products, categories, values } from "@/lib/data";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Award, FlaskConical, Globe } from "lucide-react";
@@ -116,6 +117,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Certification Carousel */}
+      <CertificationCarousel />
 
       {/* Wellness Hub */}
       <section className="py-16 md:py-24 bg-gray-50 border-t border-gray-100">
