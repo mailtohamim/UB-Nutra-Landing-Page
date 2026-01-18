@@ -11,7 +11,12 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 
 # Install dependencies
-RUN npm ci --only=production --ignore-scripts && \
+# Use npm ci if lock file exists, otherwise use npm install
+RUN if [ -f package-lock.json ]; then \
+    npm ci --omit=dev --ignore-scripts; \
+    else \
+    npm install --production --ignore-scripts; \
+    fi && \
     npm cache clean --force
 
 # Stage 2: Builder
@@ -24,7 +29,11 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY package.json package-lock.json* ./
 
 # Install all dependencies (including devDependencies for build)
-RUN npm ci --ignore-scripts
+RUN if [ -f package-lock.json ]; then \
+    npm ci --ignore-scripts; \
+    else \
+    npm install --ignore-scripts; \
+    fi
 
 # Copy all source files
 COPY . .
