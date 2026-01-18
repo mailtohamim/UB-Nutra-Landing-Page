@@ -24,29 +24,18 @@ async function triggerDeploy() {
 
     const contentType = response.headers.get("content-type");
     if (contentType && contentType.includes("application/json")) {
-      const data = await response.json();
-      console.log("📥 Response:", JSON.stringify(data, null, 2));
-    } else {
-      const text = await response.text();
-      if (text) {
-        console.log("📥 Response:", text);
-      }
-    }
+      await response.json();
 
-    // if (response.ok) {
-    //   process.exit(0);
-    // } else {
-    //   console.error("❌ Deployment failed!");
-    //   process.exit(1);
-    // }
+      // Deployment workflow started successfully
+      console.log("🚀 Deployment workflow started!");
+    } else {
+      await response.text();
+
+      // Unexpected response format
+      console.log("⚠️ Unexpected response format:");
+    }
   } catch (error) {
-    // if (error.name === "AbortError") {
-    //   console.error("❌ Request timeout!");
-    // } else {
-    //   console.error("❌ Request failed!");
-    //   console.error("Error:", error.message);
-    // }
-    // process.exit(1);
+    console.error("❌ Error triggering deployment:", error);
   }
 }
 
