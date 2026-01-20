@@ -59,15 +59,15 @@ export default function Home() {
               <span className="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
               <div className="text-3xl font-black text-blue-900 mb-4 uppercase tracking-tighter">CellNova</div>
               <h2 className="text-blue-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Wellness Supplement Brand</h2>
-              <p className="text-blue-600/70 text-center text-xs">Advanced cellular health solutions.</p>
+              <p className="text-blue-600/70 text-center text-xs">Supplements to fight cancer and other cell related diseases.</p>
             </div>
 
-            {/* PureNova Card */}
+            {/* Eknova Card */}
             <div className="relative h-80 bg-[#F0FDF4] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-green-50 transition-all duration-300 hover:shadow-lg">
               <span className="absolute top-3 right-3 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
-              <div className="text-3xl font-black text-green-900 mb-4 uppercase tracking-tighter">PureNova</div>
+              <div className="text-3xl font-black text-green-900 mb-4 uppercase tracking-tighter">Eknova</div>
               <h2 className="text-green-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Nutrition Supplement Brand</h2>
-              <p className="text-green-600/70 text-center text-xs">Pure, potent nature-derived nutrition.</p>
+              <p className="text-green-600/70 text-center text-xs">Wide range of supplements.</p>
             </div>
 
           </div>
