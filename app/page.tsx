@@ -62,7 +62,7 @@ export default function Home() {
               <p className="text-blue-600/70 text-center text-xs">Supplements to fight cancer and other cell related diseases.</p>
             </div>
 
-            {/* Eknova Card */}
+            {/* Eknova Card - Updated */}
             <div className="relative h-80 bg-[#F0FDF4] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-green-50 transition-all duration-300 hover:shadow-lg">
               <span className="absolute top-3 right-3 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
               <div className="text-3xl font-black text-green-900 mb-4 uppercase tracking-tighter">Eknova</div>
