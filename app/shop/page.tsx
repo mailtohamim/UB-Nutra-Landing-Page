@@ -31,11 +31,11 @@ function ShopContent() {
                     </a>
 
                     {/* CellNova Card */}
-                    <div className="relative h-96 bg-[#EFF6FF] rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 border border-blue-50">
-                        <span className="absolute top-4 right-4 bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Coming Soon</span>
+                    <div className="relative h-96 bg-[#FAF5FF] rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 border border-purple-100">
+                        <span className="absolute top-4 right-4 bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Coming Soon</span>
                         <img src="/cellnova logo v2.svg" alt="CellNova" className="h-16 mb-6" />
-                        <h2 className="text-blue-900 text-xl font-bold uppercase tracking-wide mb-2 text-center">Wellness Supplement Brand</h2>
-                        <p className="text-blue-600/70 text-center text-sm">Supplements to fight cancer and other cell related diseases.</p>
+                        <h2 className="text-purple-900 text-xl font-bold uppercase tracking-wide mb-2 text-center">Wellness Supplement Brand</h2>
+                        <p className="text-purple-700/70 text-center text-sm">Supplements to fight cancer and other cell related diseases.</p>
                     </div>
 
                     {/* Eknova Card */}

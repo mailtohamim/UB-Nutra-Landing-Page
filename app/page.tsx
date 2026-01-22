@@ -55,11 +55,11 @@ export default function Home() {
             </a>
 
             {/* CellNova Card */}
-            <div className="relative h-80 bg-[#EFF6FF] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-blue-50 transition-all duration-300 hover:shadow-lg">
-              <span className="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
+            <div className="relative h-80 bg-[#FAF5FF] rounded-xl overflow-hidden flex flex-col items-center justify-center p-6 border border-purple-100 transition-all duration-300 hover:shadow-lg">
+              <span className="absolute top-3 right-3 bg-purple-100 text-purple-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Coming Soon</span>
               <img src="/cellnova logo v2.svg" alt="CellNova" className="h-12 mb-4" />
-              <h2 className="text-blue-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Wellness Supplement Brand</h2>
-              <p className="text-blue-600/70 text-center text-xs">Supplements to fight cancer and other cell related diseases.</p>
+              <h2 className="text-purple-900 text-lg font-bold uppercase tracking-wide mb-1 text-center">Wellness Supplement Brand</h2>
+              <p className="text-purple-700/70 text-center text-xs">Supplements to fight cancer and other cell related diseases.</p>
             </div>
 
             {/* Eknova Card - Updated */}
