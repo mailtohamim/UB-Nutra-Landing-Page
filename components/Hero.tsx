@@ -1,10 +1,11 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import TypewriterText from "./TypewriterText";
 
 export default function Hero() {
     return (
-        <section className="relative w-full min-h-[600px] flex items-center justify-center">
+        <section className="relative w-full min-h-[600px] flex items-center">
             {/* Full Width Background Image */}
             <div className="absolute inset-0 overflow-hidden">
                 <img
@@ -16,19 +17,24 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-black/30"></div>
             </div>
 
-            {/* Centered Content */}
-            <div className="relative z-10 max-w-4xl mx-auto text-center p-8 md:p-16">
-                <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white uppercase leading-[1] mb-6">
-                    Absolute Quality <br />
-                    <span className="text-ub-red">Nutraceuticals</span>.
-                </h1>
-                <p className="text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto mb-8">
-                    Innovative, sustainable & customized solutions for your wellness journey.
-                </p>
-                <Link href="/shop" className="inline-flex items-center justify-center px-8 py-4 text-white bg-ub-red rounded-full font-bold uppercase tracking-wide hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                    Explore Products
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
+            {/* Left-Aligned Content */}
+            <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 lg:px-24 w-full">
+                <div className="max-w-3xl">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white uppercase leading-[1] mb-6">
+                        Absolute Quality <br />
+                        <TypewriterText
+                            words={["Nutraceuticals", "Life", "Health", "Wellness", "Happiness"]}
+                            className="text-ub-red"
+                        />
+                    </h1>
+                    <p className="text-lg md:text-xl text-white/90 font-medium mb-8">
+                        Innovative, sustainable & customized solutions for your wellness journey.
+                    </p>
+                    <Link href="/shop" className="inline-flex items-center justify-center px-8 py-4 text-white bg-ub-red rounded-full font-bold uppercase tracking-wide hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Explore Products
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                </div>
             </div>
         </section>
     );
