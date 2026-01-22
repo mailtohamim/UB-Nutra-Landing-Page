@@ -20,7 +20,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-extrabold text-center text-swisse-charcoal uppercase mb-12 tracking-tight">
             We've Got You Covered
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {categories.map((cat) => (
               <Link
                 key={cat.name}
