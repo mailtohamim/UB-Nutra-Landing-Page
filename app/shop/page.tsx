@@ -33,7 +33,7 @@ function ShopContent() {
                     {/* CellNova Card */}
                     <div className="relative h-96 bg-[#EFF6FF] rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 border border-blue-50">
                         <span className="absolute top-4 right-4 bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Coming Soon</span>
-                        <img src="/cellnova logo.svg" alt="CellNova" className="h-16 mb-6" />
+                        <img src="/cellnova logo v2.svg" alt="CellNova" className="h-16 mb-6" />
                         <h2 className="text-blue-900 text-xl font-bold uppercase tracking-wide mb-2 text-center">Wellness Supplement Brand</h2>
                         <p className="text-blue-600/70 text-center text-sm">Supplements to fight cancer and other cell related diseases.</p>
                     </div>
@@ -41,7 +41,7 @@ function ShopContent() {
                     {/* Eknova Card */}
                     <div className="relative h-96 bg-[#F0FDF4] rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 border border-green-50">
                         <span className="absolute top-4 right-4 bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Coming Soon</span>
-                        <img src="/eknova logo.svg" alt="Eknova" className="h-16 mb-6" />
+                        <img src="/eknova logo v2.svg" alt="Eknova" className="h-16 mb-6" />
                         <h2 className="text-green-900 text-xl font-bold uppercase tracking-wide mb-2 text-center">Nutrition Supplement Brand</h2>
                         <p className="text-green-600/70 text-center text-sm">Wide range of supplements.</p>
                     </div>
