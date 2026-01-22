@@ -42,7 +42,7 @@ export default function TypewriterText({ words, className = "" }: TypewriterText
     }, [currentText, isDeleting, currentWordIndex, words]);
 
     return (
-        <span className={className}>
+        <span className={`${className} mix-blend-difference`}>
             {currentText}
             <span className="animate-pulse">.</span>
         </span>
