@@ -36,7 +36,7 @@ export default function Navbar() {
         },
         {
             name: "CELLNOVA",
-            logo: "/Cellnova Logo v2.svg",
+            logo: "/cellnova logo.svg",
             tagline: "Advanced Cellular Longevity & Anti-Aging",
             href: "/brands/cellnova",
             color: "brand-cellnova"

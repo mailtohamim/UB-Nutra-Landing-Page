@@ -35,7 +35,7 @@ export default function CellnovaPage() {
                         className="mx-auto mb-8"
                     >
                         <Image
-                            src="/Cellnova Logo v2.svg"
+                            src="/cellnova logo.svg"
                             alt="CELLNOVA"
                             width={240}
                             height={80}
