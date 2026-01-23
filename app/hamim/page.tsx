@@ -51,11 +51,14 @@ END:VCARD`;
                 {/* Profile Content */}
                 <div className="px-6 pb-8 -mt-16 relative z-10">
                     {/* Avatar / Initials */}
-                    <div className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg bg-white flex items-center justify-center overflow-hidden">
-                        {/* Placeholder for real image, using Initials for now */}
-                        <div className="w-full h-full bg-slate-100 flex items-center justify-center text-3xl font-bold text-swisse-charcoal">
-                            HM
-                        </div>
+                    <div className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg bg-white flex items-center justify-center overflow-hidden relative">
+                        <Image
+                            src="/Hamim DP.jpg"
+                            alt="Hamim Mubtasim"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
                     </div>
 
                     <div className="text-center mt-4">
