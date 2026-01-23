@@ -100,13 +100,13 @@ export default function Home() {
           style={{ opacity: heroOpacity }}
           className="relative z-20 h-full flex items-center"
         >
-          <div className="max-w-3xl pl-4 md:pl-20 space-y-6 md:space-y-8 pr-4 md:pr-8">
+          <div className="w-full px-4 md:pl-20 md:pr-8 max-w-[100vw] overflow-hidden">
             {/* Headline with Typewriter */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-6xl md:text-8xl tracking-tight leading-none font-[family-name:var(--font-heading)] font-extrabold text-text-primary"
+              className="text-[2.5rem] leading-[1.1] sm:text-5xl md:text-8xl tracking-tight font-[family-name:var(--font-heading)] font-extrabold text-text-primary break-words hyphens-auto"
             >
               Nutraceutical
               <br />
@@ -120,7 +120,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl md:text-2xl leading-relaxed text-text-secondary max-w-2xl font-medium"
+              className="text-base sm:text-lg md:text-2xl leading-relaxed text-text-secondary max-w-2xl font-medium mt-6 md:mt-8 pr-2"
             >
               We bridge the gap between rigorous pharma-grade standards and the agility of the modern wellness market. <span className="font-bold text-text-primary">70,000 sq. ft.</span> of FDA-registered manufacturing excellence.
             </motion.p>
@@ -130,17 +130,17 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-4 pt-8 w-full sm:w-auto"
             >
               <Link
                 href="/capabilities"
-                className="bg-brand-ub text-white px-8 py-5 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(211,47,47,0.5)] luxury-drift inline-flex items-center justify-center gap-2"
+                className="bg-brand-ub text-white px-6 py-4 rounded-full font-bold text-base md:text-lg hover:shadow-[0_0_30px_rgba(211,47,47,0.5)] luxury-drift inline-flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 Explore Capabilities <ChevronRight className="w-5 h-5" />
               </Link>
               <Link
                 href="#brands"
-                className="border-2 border-text-primary backdrop-blur-sm bg-white/50 text-text-primary px-8 py-5 rounded-full font-bold text-lg hover:bg-white luxury-drift inline-flex items-center justify-center"
+                className="border-2 border-text-primary backdrop-blur-sm bg-white/50 text-text-primary px-6 py-4 rounded-full font-bold text-base md:text-lg hover:bg-white luxury-drift inline-flex items-center justify-center w-full sm:w-auto"
               >
                 View Brands
               </Link>
