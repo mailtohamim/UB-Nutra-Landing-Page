@@ -1,0 +1,96 @@
+{
+    "ember": [
+        {
+            "id": "ember-1",
+            "name": "Whey Protein Isolate",
+            "description": "750g. Rapid Absorption. Premium protein for muscle recovery.",
+            "flavors": [
+                "Vanilla",
+                "Chocolate"
+            ],
+            "size": "750g",
+            "category": "Protein"
+        },
+        {
+            "id": "ember-2",
+            "name": "Creatine Monohydrate",
+            "description": "500g. Micronized 200 Mesh. Unflavored. Pure strength amplifier.",
+            "size": "500g",
+            "category": "Performance"
+        },
+        {
+            "id": "ember-3",
+            "name": "Pre-Workout Igniter",
+            "description": "Beta-Alanine + Caffeine Matrix. Explosive energy formula.",
+            "size": "300g",
+            "category": "Pre-Workout"
+        },
+        {
+            "id": "ember-4",
+            "name": "BCAA 2:1:1",
+            "description": "Recovery Matrix. Leucine-dominant amino blend.",
+            "size": "400g",
+            "category": "Recovery"
+        }
+    ],
+    "eknova": [
+        {
+            "id": "eknova-1",
+            "name": "Ashwagandha KSM-66",
+            "description": "Stress Support. 500mg. Clinically studied adaptogen.",
+            "dosage": "500mg",
+            "category": "Adaptogen"
+        },
+        {
+            "id": "eknova-2",
+            "name": "Curcumin Complex",
+            "description": "Inflammation Response. 95% Curcuminoids. BioPerine® enhanced.",
+            "dosage": "1000mg",
+            "category": "Anti-Inflammatory"
+        },
+        {
+            "id": "eknova-3",
+            "name": "Spirulina Organic",
+            "description": "Superfood nutrient density. Blue-green algae powerhouse.",
+            "dosage": "1500mg",
+            "category": "Superfood"
+        },
+        {
+            "id": "eknova-4",
+            "name": "Moringa Oleifera",
+            "description": "The Miracle Tree extract. 90+ nutrients in one capsule.",
+            "dosage": "800mg",
+            "category": "Superfood"
+        }
+    ],
+    "cellnova": [
+        {
+            "id": "cellnova-1",
+            "name": "Liposomal Glutathione",
+            "description": "Intracellular Detox. 500mg. Master antioxidant.",
+            "dosage": "500mg",
+            "category": "Antioxidant"
+        },
+        {
+            "id": "cellnova-2",
+            "name": "NMN + Resveratrol",
+            "description": "NAD+ Precursor Complex. Longevity science in action.",
+            "dosage": "250mg NMN + 100mg Resveratrol",
+            "category": "Longevity"
+        },
+        {
+            "id": "cellnova-3",
+            "name": "Marine Collagen Peptides",
+            "description": "Type I Hydrolyzed. Skin Elasticity & Joint Support.",
+            "dosage": "10g",
+            "category": "Beauty"
+        },
+        {
+            "id": "cellnova-4",
+            "name": "CoQ10 Ubiquinol",
+            "description": "Cellular Energy. 200mg. Active form for maximum absorption.",
+            "dosage": "200mg",
+            "category": "Energy"
+        }
+    ]
+}
