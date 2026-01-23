@@ -72,7 +72,7 @@ END:VCARD`;
                     <div className="grid grid-cols-2 gap-4 mt-8">
                         <button
                             onClick={generateVCard}
-                            className="flex items-center justify-center gap-2 bg-white border-2 border-ub-red text-ub-red py-3 rounded-xl font-bold hover:bg-red-50 transition-colors shadow-md active:scale-95"
+                            className="flex items-center justify-center gap-2 bg-ub-red text-white py-3 rounded-xl font-bold hover:bg-red-700 transition-colors shadow-md active:scale-95"
                         >
                             <Download size={18} />
                             Save Contact
