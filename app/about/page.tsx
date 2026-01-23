@@ -61,7 +61,7 @@ export default function AboutPage() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
-                        className="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight drop-shadow-lg font-[family-name:var(--font-heading)]"
+                        className="text-4xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight drop-shadow-lg font-[family-name:var(--font-heading)]"
                     >
                         Pioneering Wellness
                     </motion.h1>

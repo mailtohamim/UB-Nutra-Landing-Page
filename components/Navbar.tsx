@@ -46,7 +46,7 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`fixed w-full h-20 px-8 flex items-center justify-between z-50 transition-all duration-300 ${isScrolled
+                className={`fixed w-full h-20 px-4 md:px-8 flex items-center justify-between z-50 transition-all duration-300 ${isScrolled
                     ? 'bg-glass-surface backdrop-blur-xl border-b border-glass-border shadow-lg'
                     : 'bg-transparent'
                     }`}

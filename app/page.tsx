@@ -100,13 +100,13 @@ export default function Home() {
           style={{ opacity: heroOpacity }}
           className="relative z-20 h-full flex items-center"
         >
-          <div className="max-w-3xl pl-8 md:pl-20 space-y-8 pr-8">
+          <div className="max-w-3xl pl-4 md:pl-20 space-y-6 md:space-y-8 pr-4 md:pr-8">
             {/* Headline with Typewriter */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-6xl md:text-8xl tracking-tight leading-none font-[family-name:var(--font-heading)] font-extrabold text-text-primary"
+              className="text-4xl sm:text-6xl md:text-8xl tracking-tight leading-none font-[family-name:var(--font-heading)] font-extrabold text-text-primary"
             >
               Nutraceutical
               <br />
