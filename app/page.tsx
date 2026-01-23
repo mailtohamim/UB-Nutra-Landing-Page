@@ -178,18 +178,18 @@ export default function Home() {
       </section>
 
       {/* Our Brands - Redesigned Grid */}
-      <section id="brands" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-8">
+      <section id="brands" className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl font-extrabold font-[family-name:var(--font-heading)] text-center text-text-primary mb-16 tracking-tight"
+            className="text-4xl md:text-6xl font-extrabold font-[family-name:var(--font-heading)] text-center text-text-primary mb-12 md:mb-16 tracking-tight"
           >
             Our Brands
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* EMBER */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -278,18 +278,18 @@ export default function Home() {
       </section>
 
       {/* Our Process */}
-      <section className="py-24 bg-base-mist">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 bg-base-mist">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl font-extrabold font-[family-name:var(--font-heading)] text-center text-text-primary mb-16 tracking-tight"
+            className="text-4xl md:text-6xl font-extrabold font-[family-name:var(--font-heading)] text-center text-text-primary mb-12 md:mb-16 tracking-tight"
           >
             How We Work
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
             {process.map((item, index) => (
               <motion.div
                 key={index}
@@ -297,14 +297,20 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="relative"
+                className="relative text-center md:text-left"
               >
-                <div className="text-8xl font-extrabold text-brand-ub/10 mb-4">{item.step}</div>
-                <h3 className="text-2xl font-bold text-text-primary mb-3">{item.title}</h3>
+                <div className="text-6xl md:text-8xl font-extrabold text-brand-ub/10 mb-4">{item.step}</div>
+                <h3 className="text-xl md:text-2xl font-bold text-text-primary mb-3">{item.title}</h3>
                 <p className="text-text-secondary">{item.desc}</p>
                 {index < process.length - 1 && (
                   <div className="hidden md:block absolute top-12 -right-4 text-brand-ub">
                     <ChevronRight className="w-8 h-8" />
+                  </div>
+                )}
+                {/* Mobile Arrow */}
+                {index < process.length - 1 && (
+                  <div className="md:hidden flex justify-center py-4 text-brand-ub/20">
+                    <ChevronRight className="w-6 h-6 rotate-90" />
                   </div>
                 )}
               </motion.div>
@@ -314,13 +320,13 @@ export default function Home() {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-8 text-center">
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] text-text-primary mb-6 tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] text-text-primary mb-6 tracking-tight"
           >
             Our Mission
           </motion.h2>
@@ -329,7 +335,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl leading-relaxed text-text-secondary font-medium"
+            className="text-lg md:text-2xl leading-relaxed text-text-secondary font-medium"
           >
             To empower global health by delivering innovative, sustainable, and customized nutraceutical solutions that drive excellence and foster partnership.
           </motion.p>
@@ -337,12 +343,12 @@ export default function Home() {
       </section>
 
       {/* Core Values Grid */}
-      <section className="py-20 bg-base-mist">
-        <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] text-text-primary mb-16 text-center tracking-tight">
+      <section className="py-16 md:py-20 bg-base-mist">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <h2 className="text-3xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] text-text-primary mb-10 md:mb-16 text-center tracking-tight">
             Core Values
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8">
             {coreValues.map((value, index) => (
               <motion.div
                 key={index}
