@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "UB Nutraceuticals | Absolute Quality",
     template: "%s | UB Nutraceuticals",
   },
-  description: "Innovative, sustainable & customized solutions for your wellness journey. 19+ years of pharmaceutical grade manufacturing excellence.",
+  description: "Innovative, sustainable & customized solutions for your wellness journey. The largest and pioneering nutraceutical manufacturer in Bangladesh.",
   keywords: ["Nutraceuticals", "Manufacturing", "Supplements", "Health", "Wellness", "GMP Certified", "FDA Registered", "White Label", "Private Label"],
   authors: [{ name: "UB Nutraceuticals", url: "https://ub-nutra.com" }],
   metadataBase: new URL("https://ub-nutra.com"),

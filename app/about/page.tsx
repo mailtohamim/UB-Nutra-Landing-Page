@@ -16,7 +16,7 @@ export default function AboutPage() {
     const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
 
     const stats = [
-        { value: "19+", label: "Years of Excellence", icon: <History className="w-8 h-8" /> },
+        { value: "No. 1", label: "Pioneer in Bangladesh", icon: <History className="w-8 h-8" /> },
         { value: "68,000", label: "Sq. Ft. Facility", icon: <Factory className="w-8 h-8" /> },
         { value: "35+", label: "Global Partners", icon: <Globe className="w-8 h-8" /> },
         { value: "250+", label: "Formulations", icon: <FlaskConical className="w-8 h-8" /> },
@@ -87,14 +87,14 @@ export default function AboutPage() {
                         className="space-y-8"
                     >
                         <h2 className="text-4xl md:text-5xl font-extrabold text-swisse-charcoal uppercase leading-tight font-[family-name:var(--font-heading)]">
-                            More Than Just Manufacturers
+                            Pioneering the Industry
                         </h2>
                         <div className="bg-ub-red h-1.5 w-24 rounded-full" />
                         <p className="text-gray-600 text-lg leading-relaxed font-medium">
-                            UB Nutraceuticals stands at the intersection of traditional wisdom and modern science. With over <span className="text-ub-red font-bold">19 years</span> of dedicated experience, we have evolved from a local facility to a global manufacturing powerhouse.
+                            UB Nutraceuticals stands as the <span className="text-ub-red font-bold">first and largest</span> nutraceutical manufacturing plant in Bangladesh. We have redefined the industry standards by bridging the gap between traditional wellness and modern pharmaceutical science.
                         </p>
                         <p className="text-gray-600 text-lg leading-relaxed font-medium">
-                            Our 68,000 sq. ft. facility is not just a factory; it's a hub of innovation where pharmacists, biochemists, and engineers collaborate to create supplements that truly make a difference. We don't just follow standards—we set them.
+                            Our 68,000 sq. ft. facility is the heart of this revolution—a hub where pharmacists, biochemists, and engineers collaborate to create supplements that truly make a difference. We are not just participants in the market; we are the pioneers who built it.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6 pt-4">
