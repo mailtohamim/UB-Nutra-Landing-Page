@@ -15,8 +15,47 @@ export default function HamimCard() {
         address: "Beacon Business Centre, 9/B/2, Toyenbee Circular Road, Motijheel, Dhaka.",
     };
 
-    const generateVCard = () => {
-        const vCardData = `BEGIN:VCARD
+    const generateVCard = async () => {
+        try {
+            // Fetch the image and convert to base64
+            const response = await fetch('/Hamim DP.jpg');
+            const blob = await response.blob();
+
+            // Convert blob to base64
+            const reader = new FileReader();
+            reader.readAsDataURL(blob);
+
+            reader.onloadend = () => {
+                const base64data = reader.result as string;
+                // Remove the data:image/jpeg;base64, prefix
+                const base64Image = base64data.split(',')[1];
+
+                const vCardData = `BEGIN:VCARD
+VERSION:3.0
+N:Mubtasim;Hamim;;;
+FN:${contact.name}
+TITLE:${contact.role}
+ORG:${contact.company}
+TEL;TYPE=CELL:${contact.phone.replace(/\s/g, "")}
+EMAIL:${contact.email}
+ADR;TYPE=WORK:;;${contact.address.replace(/,/g, "\\,")};;;;
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
+END:VCARD`;
+
+                const vCardBlob = new Blob([vCardData], { type: "text/vcard" });
+                const url = window.URL.createObjectURL(vCardBlob);
+                const link = document.createElement("a");
+                link.href = url;
+                link.setAttribute("download", "Hamim_Mubtasim.vcf");
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                window.URL.revokeObjectURL(url);
+            };
+        } catch (error) {
+            console.error("Error generating VCard:", error);
+            // Fallback without photo
+            const vCardData = `BEGIN:VCARD
 VERSION:3.0
 N:Mubtasim;Hamim;;;
 FN:${contact.name}
@@ -27,14 +66,16 @@ EMAIL:${contact.email}
 ADR;TYPE=WORK:;;${contact.address.replace(/,/g, "\\,")};;;;
 END:VCARD`;
 
-        const blob = new Blob([vCardData], { type: "text/vcard" });
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", "Hamim_Mubtasim.vcf");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+            const blob = new Blob([vCardData], { type: "text/vcard" });
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.setAttribute("download", "Hamim_Mubtasim.vcf");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        }
     };
 
     return (
