@@ -17,20 +17,57 @@ export default function HamimCard() {
 
     const generateVCard = async () => {
         try {
-            // Fetch the image and convert to base64
+            // Fetch the image
             const response = await fetch('/Hamim DP.jpg');
             const blob = await response.blob();
 
-            // Convert blob to base64
-            const reader = new FileReader();
-            reader.readAsDataURL(blob);
+            // Create a promise to handle image loading and resizing
+            const getResizedBase64 = (blob: Blob): Promise<string> => {
+                return new Promise((resolve, reject) => {
+                    const img = new window.Image();
+                    const url = URL.createObjectURL(blob);
 
-            reader.onloadend = () => {
-                const base64data = reader.result as string;
-                // Remove the data:image/jpeg;base64, prefix
-                const base64Image = base64data.split(',')[1];
+                    img.onload = () => {
+                        URL.revokeObjectURL(url);
+                        const canvas = document.createElement('canvas');
+                        const MAX_WIDTH = 300;
+                        const MAX_HEIGHT = 300;
+                        let width = img.width;
+                        let height = img.height;
 
-                const vCardData = `BEGIN:VCARD
+                        if (width > height) {
+                            if (width > MAX_WIDTH) {
+                                height *= MAX_WIDTH / width;
+                                width = MAX_WIDTH;
+                            }
+                        } else {
+                            if (height > MAX_HEIGHT) {
+                                width *= MAX_HEIGHT / height;
+                                height = MAX_HEIGHT;
+                            }
+                        }
+
+                        canvas.width = width;
+                        canvas.height = height;
+                        const ctx = canvas.getContext('2d');
+                        ctx?.drawImage(img, 0, 0, width, height);
+
+                        // Convert to base64 with reduced quality
+                        const dataUrl = canvas.toDataURL('image/jpeg', 0.8);
+                        resolve(dataUrl.split(',')[1]);
+                    };
+
+                    img.onerror = reject;
+                    img.src = url;
+                });
+            };
+
+            const base64Image = await getResizedBase64(blob);
+
+            // Fold base64 string for vCard compatibility (max 75 chars per line)
+            const foldedBase64 = base64Image.match(/.{1,75}/g)?.join('\r\n ') || base64Image;
+
+            const vCardData = `BEGIN:VCARD
 VERSION:3.0
 N:Mubtasim;Hamim;;;
 FN:${contact.name}
@@ -39,19 +76,19 @@ ORG:${contact.company}
 TEL;TYPE=CELL:${contact.phone.replace(/\s/g, "")}
 EMAIL:${contact.email}
 ADR;TYPE=WORK:;;${contact.address.replace(/,/g, "\\,")};;;;
-PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
+PHOTO;ENCODING=b;TYPE=JPEG: ${foldedBase64}
 END:VCARD`;
 
-                const vCardBlob = new Blob([vCardData], { type: "text/vcard" });
-                const url = window.URL.createObjectURL(vCardBlob);
-                const link = document.createElement("a");
-                link.href = url;
-                link.setAttribute("download", "Hamim_Mubtasim.vcf");
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                window.URL.revokeObjectURL(url);
-            };
+            const vCardBlob = new Blob([vCardData], { type: "text/vcard" });
+            const url = window.URL.createObjectURL(vCardBlob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.setAttribute("download", "Hamim_Mubtasim.vcf");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+
         } catch (error) {
             console.error("Error generating VCard:", error);
             // Fallback without photo
